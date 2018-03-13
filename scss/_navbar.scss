@@ -42,6 +42,17 @@
     }
   }
 }
+@media(min-width:1700px) {
+.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-image: linear-gradient(-315deg, #fff 0%, #fff 40%, #333 40%, #333 100%);
+    }
+ #mainNav {
+   background-image: linear-gradient(-315deg, #fff 0%, #fff 32%, rgba(0,0,0,0) 32%, rgba(0,0,0,0) 100%);
+ }   
+}
+
 @media(min-width:992px) {
   #mainNav {
     padding-top: 25px;
@@ -50,6 +61,7 @@
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
+    background-image: linear-gradient(-315deg, #fff 0%, #fff 32%, rgba(0,0,0,0) 32%, rgba(0,0,0,0) 100%);
     background-color: transparent;
     .navbar-brand {
       font-size: 1.75em;
@@ -67,6 +79,7 @@
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
+      background-image: linear-gradient(-315deg, #fff 0%, #fff 30%, #333 30%, #333 100%);
       background-color: $gray-darker;
       .navbar-brand {
         font-size: 1.25em;

@@ -60,6 +60,9 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #57B279; }
 
+.fa-stack-2x {
+  font-size: 1em !important; }
+
 #mainNav {
   background-color: #fff; }
   #mainNav .navbar-toggler {
@@ -91,6 +94,14 @@ body {
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
       color: #57B279; }
 
+@media (min-width: 1700px) {
+  .navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: linear-gradient(-315deg, #fff 0%, #fff 40%, #333 40%, #333 100%); }
+  #mainNav {
+    background-image: linear-gradient(-315deg, #fff 0%, #fff 32%, transparent 32%, transparent 100%); } }
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -99,6 +110,7 @@ body {
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
+    background-image: linear-gradient(-315deg, #fff 0%, #fff 32%, transparent 32%, transparent 100%);
     background-color: transparent; }
     #mainNav .navbar-brand {
       font-size: 1.75em;
@@ -110,6 +122,7 @@ body {
     #mainNav.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
+      background-image: linear-gradient(-315deg, #fff 0%, #fff 30%, #333 30%, #333 100%);
       background-color: #222222; }
       #mainNav.navbar-shrink .navbar-brand {
         font-size: 1.25em;
@@ -118,10 +131,11 @@ body {
 header.masthead {
   text-align: center;
   color: #333333;
-  background-image: url("../img/rampart_hero.jpg");
+  background-image: url("../img/textures/vector_texture.jpg"), linear-gradient(rgba(50, 50, 50, 0.5) 0%, rgba(50, 50, 50, 0.5) 100%);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  background-blend-mode: multiply;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -130,12 +144,14 @@ header.masthead {
     padding-top: 150px;
     padding-bottom: 100px; }
     header.masthead .intro-text .intro-lead-in {
+      color: #fff;
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
+      color: #fff;
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;

@@ -2,15 +2,17 @@
 header.masthead {
   text-align: center;
   color: $theme-gray;
-  background-image: url('../img/rampart_hero.jpg');
+  background-image: url('../img/textures/vector_texture.jpg'),linear-gradient(rgba(50, 50, 50, .5) 0%, rgba(50, 50, 50, .5) 100%);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+  background-blend-mode: multiply;
   @include background-cover;
   .intro-text {
     padding-top: 150px;
     padding-bottom: 100px;
     .intro-lead-in {
+      color: #fff;
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
@@ -18,6 +20,7 @@ header.masthead {
       @include serif-font;
     }
     .intro-heading {
+      color: #fff;
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
